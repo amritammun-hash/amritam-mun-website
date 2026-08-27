@@ -365,6 +365,12 @@ document.addEventListener('DOMContentLoaded', () => {
         myGlobe.controls().autoRotate = true;
         myGlobe.controls().autoRotateSpeed = 1.5;
         myGlobe.controls().enableZoom = false; 
+        
+        // Handle window resize for full-screen globe
+        window.addEventListener('resize', () => {
+            myGlobe.width(window.innerWidth);
+            myGlobe.height(window.innerHeight);
+        });
 
         // Close crisis panel
         document.getElementById('close-crisis').addEventListener('click', () => {

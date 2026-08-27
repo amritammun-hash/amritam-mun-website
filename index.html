@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Boxicons for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css?v=2.6">
+    <link rel="stylesheet" href="style.css?v=2.7">
     <!-- Globe.gl -->
     <script src="https://unpkg.com/globe.gl"></script>
 </head>
@@ -57,90 +57,93 @@
         </div>
     </header>
 
-    <!-- Hero Section (Teaser) -->
-    <section class="hero split-hero" id="home">
-        <div class="hero-overlay"></div>
-        <div class="hero-split-container">
-            <div class="hero-text-col">
-            <div class="teaser-top reveal">
+    <!-- Hero Section (Immersive HUD) -->
+    <section class="hero hud-hero" id="home">
+        <!-- Absolute Background Globe -->
+        <div class="hero-globe-bg">
+            <div id="globeViz"></div>
+        </div>
+        
+        <div class="hero-overlay-hud"></div>
+
+        <!-- Center Holographic Text -->
+        <div class="hud-center-text reveal delay-2">
+            <div class="teaser-top">
                 <span class="teaser-line"></span>
                 <p class="teaser-text">SOMETHING EXTRAORDINARY IS ON ITS WAY</p>
                 <span class="teaser-line"></span>
             </div>
-
-            <!-- Main Logo -->
-            <div class="logo-wrapper reveal delay-1">
-                <div class="logo-pulse"></div>
-                <img src="assets/amritam-logo.jpg" alt="Amritam MUN Logo" class="main-logo-img">
+            <h1 class="hero-title">AMRITAM</h1>
+            <div class="hero-subtitle-wrapper">
+                <span class="gold-line"></span>
+                <h2 class="hero-subtitle">MUN</h2>
+                <span class="gold-line"></span>
             </div>
-
-            <div class="title-container reveal delay-2">
-                <h1 class="hero-title">AMRITAM</h1>
-                <div class="hero-subtitle-wrapper">
-                    <span class="gold-line"></span>
-                    <h2 class="hero-subtitle">MUN</h2>
-                    <span class="gold-line"></span>
-                </div>
-            </div>
-            
-            <div class="tagline-wrapper reveal delay-3">
+            <div class="tagline-wrapper">
                 <i class='bx bxs-quote-alt-left gold-quote'></i>
                 <p class="tagline">IDEAS THAT LIVE BEYOND.</p>
                 <i class='bx bxs-quote-alt-right gold-quote'></i>
             </div>
-            
-            <div class="hero-actions reveal delay-4" style="margin-bottom: 40px; text-align: left;">
-                <h2 class="coming-soon" data-text="COMING SOON" style="margin-bottom: 5px; white-space: nowrap;">COMING SOON</h2>
-                <p style="color: var(--gold-primary); letter-spacing: 3px; text-transform: uppercase; font-size: 0.85rem; font-weight: 600;">Prepare to elevate your voice</p>
-            </div>
-            
-            <div class="location-badge reveal delay-4">
-                <div class="location-icon-wrapper">
-                    <i class='bx bxs-map'></i>
-                </div>
-                <span>BILASPUR, CHHATTISGARH</span>
-            </div>
-            
-            <div class="pillars-container">
-                <div class="pillar reveal-up delay-1">
-                    <div class="pillar-icon"><i class='bx bx-microphone'></i></div>
-                    <span>SPEAK</span>
-                </div>
-                <div class="pillar reveal-up delay-2">
-                    <div class="pillar-icon"><i class='bx bx-shield-quarter'></i></div>
-                    <span>CONFIDENCE</span>
-                </div>
-                <div class="pillar reveal-up delay-3">
-                    <div class="pillar-icon"><i class='bx bxs-bank'></i></div>
-                    <span>LEADERSHIP</span>
-                </div>
-                <div class="pillar reveal-up delay-4">
-                    <div class="pillar-icon"><i class='bx bx-globe'></i></div>
-                    <span>IMPACT</span>
-                </div>
-                <div class="pillar reveal-up delay-5">
-                    <div class="pillar-icon"><i class='bx bx-spa'></i></div>
-                    <span>LEGACY</span>
+        </div>
+
+        <!-- HUD Widgets Container -->
+        <div class="hud-container">
+            <!-- Top Left: Logo -->
+            <div class="hud-widget hud-top-left reveal">
+                <div class="logo-wrapper">
+                    <div class="logo-pulse"></div>
+                    <img src="assets/amritam-logo.jpg" alt="Amritam MUN Logo" class="main-logo-img">
                 </div>
             </div>
-            
-            <div class="scroll-indicator reveal delay-5">
-                <p>STAY TUNED. STAY INSPIRED.</p>
-                <div class="mouse">
-                    <div class="wheel"></div>
+
+            <!-- Bottom Left: Location & Status -->
+            <div class="hud-widget hud-bottom-left glass-widget reveal delay-3">
+                <div class="hero-actions" style="margin-bottom: 20px;">
+                    <h2 class="coming-soon" data-text="COMING SOON" style="margin-bottom: 5px;">COMING SOON</h2>
+                    <p style="color: var(--gold-primary); letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; font-weight: 600;">Prepare to elevate your voice</p>
+                </div>
+                <div class="location-badge">
+                    <div class="location-icon-wrapper"><i class='bx bxs-map'></i></div>
+                    <span style="font-size: 0.8rem;">BILASPUR, CHHATTISGARH</span>
                 </div>
             </div>
-            </div>
-            
-            <div class="hero-globe-col reveal delay-2">
-                <div class="globe-wrapper">
-                    <div id="globeViz"></div>
-                    <div id="crisis-panel" class="crisis-panel glass-panel hidden">
-                        <button id="close-crisis" class="close-btn"><i class='bx bx-x'></i></button>
-                        <h3 id="crisis-title">Committee Name</h3>
-                        <p id="crisis-desc" style="margin-bottom: 0;">Agenda description will appear here.</p>
+
+            <!-- Bottom Right: Pillars -->
+            <div class="hud-widget hud-bottom-right reveal delay-4">
+                <div class="pillars-container-vertical">
+                    <div class="pillar-mini">
+                        <div class="pillar-icon-mini"><i class='bx bx-microphone'></i></div>
+                        <span>SPEAK</span>
+                    </div>
+                    <div class="pillar-mini">
+                        <div class="pillar-icon-mini"><i class='bx bx-shield-quarter'></i></div>
+                        <span>CONFIDENCE</span>
+                    </div>
+                    <div class="pillar-mini">
+                        <div class="pillar-icon-mini"><i class='bx bxs-bank'></i></div>
+                        <span>LEADERSHIP</span>
+                    </div>
+                    <div class="pillar-mini">
+                        <div class="pillar-icon-mini"><i class='bx bx-globe'></i></div>
+                        <span>IMPACT</span>
+                    </div>
+                    <div class="pillar-mini">
+                        <div class="pillar-icon-mini"><i class='bx bx-spa'></i></div>
+                        <span>LEGACY</span>
                     </div>
                 </div>
+            </div>
+
+            <!-- Bottom Center: Scroll -->
+            <div class="hud-scroll reveal delay-5">
+                <div class="mouse"><div class="wheel"></div></div>
+            </div>
+            
+            <!-- Floating Crisis Panel (absolute) -->
+            <div id="crisis-panel" class="crisis-panel glass-panel hidden" style="position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); z-index: 50;">
+                <button id="close-crisis" class="close-btn"><i class='bx bx-x'></i></button>
+                <h3 id="crisis-title">Committee Name</h3>
+                <p id="crisis-desc" style="margin-bottom: 0;">Agenda description will appear here.</p>
             </div>
         </div>
     </section>
