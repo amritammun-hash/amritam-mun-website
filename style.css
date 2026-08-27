@@ -94,7 +94,8 @@ ul { list-style: none; }
 .hero-overlay-hud { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(circle at center, transparent 40%, rgba(1, 4, 8, 0.95) 100%); pointer-events: none; z-index: 2; }
 
 /* Holographic Text */
-.hud-center-text { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); z-index: 5; text-align: center; display: flex; flex-direction: column; align-items: center; pointer-events: none; width: 100%; max-width: 1200px; }
+.hud-center-text { position: absolute; top: 48%; left: 50%; transform: translate(-50%, -50%); z-index: 5; pointer-events: none; width: 100%; max-width: 1200px; }
+.hud-center-inner { text-align: center; display: flex; flex-direction: column; align-items: center; width: 100%; }
 .hud-center-text .teaser-top { justify-content: center; margin-bottom: 20px; }
 .hud-center-text .hero-title { font-family: var(--font-serif); font-size: 10rem; color: var(--gold-light); line-height: 1; letter-spacing: 15px; text-shadow: 0 15px 50px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.8); margin-left: 15px; background: var(--gradient-gold-text); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 .hud-center-text .hero-subtitle-wrapper { justify-content: center; margin-top: -10px; }
@@ -102,7 +103,7 @@ ul { list-style: none; }
 .hud-center-text .tagline-wrapper { justify-content: center; margin-top: 30px; }
 
 /* HUD Container & Widgets */
-.hud-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; pointer-events: none; padding: 40px; }
+.hud-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; pointer-events: none; }
 .hud-widget { position: absolute; pointer-events: auto; }
 .hud-top-left { top: 40px; left: 40px; }
 .hud-bottom-left { bottom: 40px; left: 40px; }
@@ -125,11 +126,11 @@ ul { list-style: none; }
     display: inline-block; 
     white-space: nowrap; 
     font-family: var(--font-serif); 
-    font-size: 4rem; 
+    font-size: 2.2rem; 
     color: transparent; 
     -webkit-text-stroke: 1px var(--gold-primary); 
     position: relative; 
-    letter-spacing: 15px; 
+    letter-spacing: 12px; 
     margin-bottom: 40px; 
     background: linear-gradient(to right, var(--gold-light) 50%, transparent 50%);
     background-size: 200% 100%;
