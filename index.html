@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Boxicons for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css?v=2.9">
+    <link rel="stylesheet" href="style.css?v=3.0">
     <!-- Globe.gl -->
     <script src="https://unpkg.com/globe.gl"></script>
 </head>
@@ -44,7 +44,7 @@
                 <ul class="nav-list">
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#partners" class="nav-link">Partners</a></li>
-                    <li><a href="#procedure" class="nav-link">Procedure</a></li>
+                    <li><a href="procedure.html" class="nav-link">Procedure</a></li>
                     <li><a href="#game" class="nav-link">Play & Learn</a></li>
                     <li><a href="learn.html" class="nav-link highlight-link">Masterclass <i class='bx bx-star'></i></a></li>
                     <li><a href="#" id="passport-btn" class="nav-link passport-link"><i class='bx bxs-id-card'></i> Passport</a></li>
@@ -93,20 +93,23 @@
             <!-- (Logo removed to prevent overlap with navbar) -->
 
             <!-- Bottom Left: Location & Status -->
-            <div class="hud-widget hud-bottom-left glass-widget reveal delay-3">
-                <div class="hero-actions" style="margin-bottom: 20px;">
-                    <h2 class="coming-soon" data-text="COMING SOON" style="margin-bottom: 5px;">COMING SOON</h2>
-                    <p style="color: var(--gold-primary); letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; font-weight: 600;">Prepare to elevate your voice</p>
-                </div>
-                <div class="location-badge">
-                    <div class="location-icon-wrapper"><i class='bx bxs-map'></i></div>
-                    <span style="font-size: 0.8rem;">BILASPUR, CHHATTISGARH</span>
+            <div class="hud-widget hud-bottom-left">
+                <div class="glass-widget reveal delay-3">
+                    <div class="hero-actions" style="margin-bottom: 20px;">
+                        <h2 class="coming-soon" data-text="COMING SOON" style="margin-bottom: 5px;">COMING SOON</h2>
+                        <p style="color: var(--gold-primary); letter-spacing: 2px; text-transform: uppercase; font-size: 0.75rem; font-weight: 600;">Prepare to elevate your voice</p>
+                            </div>
+                        </div>
+                    <div class="location-badge">
+                        <div class="location-icon-wrapper"><i class='bx bxs-map'></i></div>
+                        <span style="font-size: 0.8rem;">BILASPUR, CHHATTISGARH</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Bottom Right: Pillars -->
-            <div class="hud-widget hud-bottom-right reveal delay-4">
-                <div class="pillars-container-vertical">
+            <div class="hud-widget hud-bottom-right">
+                <div class="pillars-container-vertical reveal delay-4">
                     <div class="pillar-mini">
                         <div class="pillar-icon-mini"><i class='bx bx-microphone'></i></div>
                         <span>SPEAK</span>
@@ -140,7 +143,8 @@
                 <button id="close-crisis" class="close-btn"><i class='bx bx-x'></i></button>
                 <h3 id="crisis-title">Committee Name</h3>
                 <p id="crisis-desc" style="margin-bottom: 0;">Agenda description will appear here.</p>
-            </div>
+                            </div>
+                        </div>
         </div>
     </section>
 
@@ -157,60 +161,39 @@
                 <div class="title-underline center"></div>
             </div>
             
-            <div class="partners-layout">
-                <!-- Sukoon Music Academy (Full Width, Powered By) -->
-                <div class="partner-card glass-panel full-width reveal-up">
+            <div class="partners-horizontal-grid">
+                <!-- Sukoon Music Academy -->
+                <div class="partner-card glass-panel reveal-up">
                     <div class="card-glow"></div>
                     <div class="partner-type">POWERED BY</div>
-                    <div class="partner-content-horizontal">
-                        <div class="partner-logo-ring sukoon-ring">
-                            <img src="assets/sukoon-logo.jpg" alt="Sukoon Music Academy Logo" class="partner-logo-img sukoon-border">
-                        </div>
-                        <div class="partner-text-content">
-                            <h3 class="partner-name">SUKOON MUSIC ACADEMY</h3>
-                            <p class="partner-subname">(Musilearn Edutech Private Limited)</p>
-                            <div class="partner-features">
-                                <div class="feature-item">
-                                    <i class='bx bx-globe'></i>
-                                    <span>Global Presence</span>
-                                </div>
-                                <div class="feature-item">
-                                    <i class='bx bxs-graduation'></i>
-                                    <span>Expert Instructors</span>
-                                </div>
-                                <div class="feature-item">
-                                    <i class='bx bxs-music'></i>
-                                    <span>Quality Music Education</span>
-                                </div>
-                            </div>
-                            <div class="quote-box">
-                                <p class="partner-quote">Together, We Inspire. Together, We Create Harmony.</p>
-                            </div>
-                        </div>
+                    <div class="partner-logo-ring sukoon-ring">
+                        <img src="assets/sukoon-logo.jpg" alt="Sukoon Music Academy Logo" class="partner-logo-img sukoon-border">
+                    </div>
+                    <h3 class="partner-name">SUKOON MUSIC ACADEMY</h3>
+                    <p class="partner-subname">(Musilearn Edutech Pvt Ltd)</p>
+                    <div class="partner-features-stacked">
+                        <div class="feature-item"><i class='bx bx-globe'></i><span>Global Presence</span></div>
+                        <div class="feature-item"><i class='bx bxs-graduation'></i><span>Expert Instructors</span></div>
+                        <div class="feature-item"><i class='bx bxs-music'></i><span>Quality Music Education</span></div>
+                    </div>
+                    <div class="quote-box">
+                        <p class="partner-quote">Together, We Inspire. Together, We Create Harmony.</p>
                     </div>
                 </div>
 
-                <!-- Unfiltered Paradox (Centered below) -->
-                <div class="partner-card glass-panel standalone-card reveal-up delay-2">
+                <!-- Unfiltered Paradox -->
+                <div class="partner-card glass-panel reveal-up delay-2">
                     <div class="card-glow"></div>
                     <div class="partner-type">OFFICIAL DIGITAL MEDIA PARTNER</div>
                     <div class="partner-logo-ring up-ring">
                         <img src="assets/up-logo.jpg" alt="Unfiltered Paradox Logo" class="partner-logo-img up-border">
                     </div>
                     <h3 class="partner-name">UNFILTERED PARADOX</h3>
-                    <div class="partner-features" style="gap: 50px;">
-                        <div class="feature-item">
-                            <i class='bx bxs-megaphone'></i>
-                            <span>Amplifying Voices</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class='bx bx-message-rounded-dots'></i>
-                            <span>Challenging Ideas</span>
-                        </div>
-                        <div class="feature-item">
-                            <i class='bx bx-world'></i>
-                            <span>Shaping Tomorrow</span>
-                        </div>
+                    <p class="partner-subname" style="visibility: hidden;">(Placeholder)</p>
+                    <div class="partner-features-stacked">
+                        <div class="feature-item"><i class='bx bxs-megaphone'></i><span>Amplifying Voices</span></div>
+                        <div class="feature-item"><i class='bx bx-message-rounded-dots'></i><span>Challenging Ideas</span></div>
+                        <div class="feature-item"><i class='bx bx-world'></i><span>Shaping Tomorrow</span></div>
                     </div>
                     <div class="quote-box">
                         <p class="partner-quote">Together, Let's Inspire Change.</p>
@@ -219,71 +202,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Procedure of MUN Section -->
-    <section class="procedure-section section" id="procedure">
-        <div class="container">
-            <div class="section-header text-center reveal-up">
-                <div class="tagline-wrapper center">
-                    <span class="gold-dot"></span>
-                    <p class="tagline small">HOW IT WORKS</p>
-                    <span class="gold-dot"></span>
-                </div>
-                <h2 class="section-title">The <span class="highlight">Procedure</span> of MUN</h2>
-                <div class="title-underline center"></div>
-                <p class="section-description">A quick guide for first-timers to understand the flow of a committee.</p>
-            </div>
-            
-            <div class="timeline-container">
-                <div class="timeline-item reveal-left">
-                    <div class="timeline-dot"><i class='bx bx-list-check'></i></div>
-                    <div class="timeline-content glass-panel">
-                        <h3 class="timeline-date">Step 1</h3>
-                        <h4 class="timeline-event">Roll Call</h4>
-                        <p>The committee begins! Delegates answer "Present" or "Present and Voting". This sets the quorum for the session.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-right delay-1">
-                    <div class="timeline-dot"><i class='bx bx-microphone'></i></div>
-                    <div class="timeline-content glass-panel">
-                        <h3 class="timeline-date">Step 2</h3>
-                        <h4 class="timeline-event">General Speaker's List (GSL)</h4>
-                        <p>The default state of the committee. Delegates give broad speeches outlining their country's stance on the agenda.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-left delay-2">
-                    <div class="timeline-dot"><i class='bx bx-time'></i></div>
-                    <div class="timeline-content glass-panel">
-                        <h3 class="timeline-date">Step 3</h3>
-                        <h4 class="timeline-event">Moderated Caucus</h4>
-                        <p>A structured debate on a specific sub-topic. Delegates speak for a set time (e.g., 60 seconds) when recognized by the chair.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-right delay-3">
-                    <div class="timeline-dot"><i class='bx bx-conversation'></i></div>
-                    <div class="timeline-content glass-panel">
-                        <h3 class="timeline-date">Step 4</h3>
-                        <h4 class="timeline-event">Unmoderated Caucus</h4>
-                        <p>Informal lobbying time! Delegates leave their seats to form blocs, negotiate, and write working papers together.</p>
-                    </div>
-                </div>
-                <div class="timeline-item reveal-left delay-4">
-                    <div class="timeline-dot"><i class='bx bx-file'></i></div>
-                    <div class="timeline-content glass-panel">
-                        <h3 class="timeline-date">Step 5</h3>
-                        <h4 class="timeline-event">Draft Resolution & Voting</h4>
-                        <p>Blocs present their solutions (Draft Resolutions). After a final debate, the committee votes to pass or fail them.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center reveal-up delay-5" style="margin-top: 50px;">
-                <a href="learn.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1rem;">Explore the Full Interactive Masterclass <i class='bx bx-right-arrow-alt'></i></a>
-            </div>
-        </div>
-    </section>
-
-
 
     <!-- Interactive Game Section -->
     <section class="game-section section" id="game">
@@ -360,7 +278,8 @@
                     <div class="tagline-wrapper" style="justify-content: flex-start; margin-bottom: 20px;">
                         <span class="gold-dot" style="margin-left: 0;"></span>
                         <p class="tagline small">FREQUENTLY ASKED</p>
-                    </div>
+                            </div>
+                        </div>
                     <h2 class="section-title">Common <span class="highlight">Queries</span></h2>
                     <div class="title-underline"></div>
                 </div>
@@ -382,7 +301,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Derived from ancient Sanskrit, Amritam refers to the nectar of immortality. In our context, it symbolizes ideas and legacies that live beyond a single lifetime.</p>
+                            <div class="qa-answer-inner">
+                                <p>Derived from ancient Sanskrit, Amritam refers to the nectar of immortality. In our context, it symbolizes ideas and legacies that live beyond a single lifetime.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -391,7 +312,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Not at all! Model UN is a learning platform. Many first-timers discover their voice during the conference. The chairs are there to guide you.</p>
+                            <div class="qa-answer-inner">
+                                <p>Not at all! Model UN is a learning platform. Many first-timers discover their voice during the conference. The chairs are there to guide you.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -400,7 +323,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>A position paper is a short essay detailing your assigned country's policies on the committee's agenda. It helps you research and prepare before the conference begins.</p>
+                            <div class="qa-answer-inner">
+                                <p>A position paper is a short essay detailing your assigned country's policies on the committee's agenda. It helps you research and prepare before the conference begins.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -409,7 +334,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>You can always refer to your notes! Furthermore, during Unmoderated Caucuses, you will work in teams (blocs), taking the pressure off individual speaking and focusing on collaboration.</p>
+                            <div class="qa-answer-inner">
+                                <p>You can always refer to your notes! Furthermore, during Unmoderated Caucuses, you will work in teams (blocs), taking the pressure off individual speaking and focusing on collaboration.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -418,7 +345,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Western formals (suits, blazers, skirts/trousers) or traditional Indian formal wear. The key is to look professional and diplomatic at all times.</p>
+                            <div class="qa-answer-inner">
+                                <p>Western formals (suits, blazers, skirts/trousers) or traditional Indian formal wear. The key is to look professional and diplomatic at all times.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -427,7 +356,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Start with a CIA World Factbook search for your country's basics, then look for their past statements on the UN website or major news outlets regarding the specific agenda.</p>
+                            <div class="qa-answer-inner">
+                                <p>Start with a CIA World Factbook search for your country's basics, then look for their past statements on the UN website or major news outlets regarding the specific agenda.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,7 +371,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>While the exact committee matrix is tightly under wraps, we are planning rigorous and dynamic simulations designed to test even the most veteran delegates.</p>
+                            <div class="qa-answer-inner">
+                                <p>While the exact committee matrix is tightly under wraps, we are planning rigorous and dynamic simulations designed to test even the most veteran delegates.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -449,7 +382,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Our Executive Board evaluates delegates based on diplomatic conduct, substantive knowledge, lobbying skills, and the ability to formulate realistic resolutions.</p>
+                            <div class="qa-answer-inner">
+                                <p>Our Executive Board evaluates delegates based on diplomatic conduct, substantive knowledge, lobbying skills, and the ability to formulate realistic resolutions.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -458,7 +393,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Awards (Best Delegate, High Commendation, Special Mention) are holistic. They aren't just for who speaks the most, but for who drives consensus and embodies their country's foreign policy accurately.</p>
+                            <div class="qa-answer-inner">
+                                <p>Awards (Best Delegate, High Commendation, Special Mention) are holistic. They aren't just for who speaks the most, but for who drives consensus and embodies their country's foreign policy accurately.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -467,7 +404,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Yes! In Crisis or specialized Indian committees (like Lok Sabha), standard long-form resolutions are often replaced by rapid-fire directives or communiqués to handle immediate situations.</p>
+                            <div class="qa-answer-inner">
+                                <p>Yes! In Crisis or specialized Indian committees (like Lok Sabha), standard long-form resolutions are often replaced by rapid-fire directives or communiqués to handle immediate situations.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="qa-item">
@@ -476,7 +415,9 @@
                             <i class='bx bx-chevron-down'></i>
                         </div>
                         <div class="qa-answer">
-                            <p>Maintain diplomatic decorum. The Executive Board heavily penalizes hostility. Counter aggression with kindness, parliamentary rules, and robust, irrefutable arguments.</p>
+                            <div class="qa-answer-inner">
+                                <p>Maintain diplomatic decorum. The Executive Board heavily penalizes hostility. Counter aggression with kindness, parliamentary rules, and robust, irrefutable arguments.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,7 +438,8 @@
                     </div>
                 </a>
                 <p class="footer-tagline">IDEAS THAT LIVE BEYOND.</p>
-            </div>
+                            </div>
+                        </div>
             
             <div class="footer-col social-col reveal-up delay-2">
                 <h4>Follow Our Journey</h4>
@@ -520,7 +462,8 @@
         <div class="footer-bottom reveal-up delay-3">
             <div class="gold-divider"></div>
             <p>&copy; 2026 Amritam MUN. All rights reserved.</p>
-        </div>
+                            </div>
+                        </div>
     </footer>
 
     <!-- Delegate Passport Modal -->
@@ -531,7 +474,8 @@
                 <i class='bx bx-world gold-primary' style="font-size: 3rem; margin-bottom: 10px;"></i>
                 <h2>Delegate Passport</h2>
                 <p>Amritam MUN</p>
-            </div>
+                            </div>
+                        </div>
             <div class="passport-pages">
                 <h3>Your Visa Stamps</h3>
                 <div class="stamps-grid" id="stamps-container">

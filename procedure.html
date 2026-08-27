@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritam MUN | Coming Soon</title>
+    <meta name="description" content="Something extraordinary is on its way. Amritam MUN in Bilaspur, Chhattisgarh. Ideas that live beyond.">
+    <!-- Google Fonts: Cinzel for the logo match, Montserrat for clean sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css?v=3.0">
+    <!-- Globe.gl -->
+    <script src="https://unpkg.com/globe.gl"></script>
+</head>
+<body>
+    <!-- Cinematic Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="aurora-container">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Interactive Background Elements -->
+    <div class="interactive-bg">
+        <div class="glow-point"></div>
+    </div>
+    <div class="ambient-dust" id="dust-container"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container reveal-top">
+            <a href="#" class="logo">
+                <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span class="amritam-text">AMRITAM</span>
+                    <span class="mun-text">MUN</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#partners" class="nav-link">Partners</a></li>
+                    <li><a href="procedure.html" class="nav-link">Procedure</a></li>
+                    <li><a href="index.html#game" class="nav-link">Play & Learn</a></li>
+                    <li><a href="learn.html" class="nav-link">Masterclass ✨</a></li>
+                    <li><a href="index.html#qa" class="nav-link"><i class='bx bx-id-card'></i> Passport</a></li>
+                    <li><a href="#footer" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <i class='bx bx-menu-alt-right'></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Procedure of MUN Section -->
+    <section class="procedure-section section" id="procedure">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="tagline-wrapper center">
+                    <span class="gold-dot"></span>
+                    <p class="tagline small">HOW IT WORKS</p>
+                    <span class="gold-dot"></span>
+                </div>
+                <h2 class="section-title">The <span class="highlight">Procedure</span> of MUN</h2>
+                <div class="title-underline center"></div>
+                <p class="section-description">A quick guide for first-timers to understand the flow of a committee.</p>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"><i class='bx bx-list-check'></i></div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="timeline-date">Step 1</h3>
+                        <h4 class="timeline-event">Roll Call</h4>
+                        <p>The committee begins! Delegates answer "Present" or "Present and Voting". This sets the quorum for the session.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-1">
+                    <div class="timeline-dot"><i class='bx bx-microphone'></i></div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="timeline-date">Step 2</h3>
+                        <h4 class="timeline-event">General Speaker's List (GSL)</h4>
+                        <p>The default state of the committee. Delegates give broad speeches outlining their country's stance on the agenda.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left delay-2">
+                    <div class="timeline-dot"><i class='bx bx-time'></i></div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="timeline-date">Step 3</h3>
+                        <h4 class="timeline-event">Moderated Caucus</h4>
+                        <p>A structured debate on a specific sub-topic. Delegates speak for a set time (e.g., 60 seconds) when recognized by the chair.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right delay-3">
+                    <div class="timeline-dot"><i class='bx bx-conversation'></i></div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="timeline-date">Step 4</h3>
+                        <h4 class="timeline-event">Unmoderated Caucus</h4>
+                        <p>Informal lobbying time! Delegates leave their seats to form blocs, negotiate, and write working papers together.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-left delay-4">
+                    <div class="timeline-dot"><i class='bx bx-file'></i></div>
+                    <div class="timeline-content glass-panel">
+                        <h3 class="timeline-date">Step 5</h3>
+                        <h4 class="timeline-event">Draft Resolution & Voting</h4>
+                        <p>Blocs present their solutions (Draft Resolutions). After a final debate, the committee votes to pass or fail them.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center reveal-up delay-5" style="margin-top: 50px;">
+                <a href="learn.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1rem;">Explore the Full Interactive Masterclass <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-glow"></div>
+        <div class="footer-container container">
+            <div class="footer-col brand-col reveal-up">
+                <a href="#" class="logo footer-logo">
+                    <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="footer-logo-img">
+                    <div class="footer-brand-text">
+                        <span class="amritam-text">AMRITAM</span>
+                        <span class="mun-text">MUN</span>
+                    </div>
+                </a>
+                <p class="footer-tagline">IDEAS THAT LIVE BEYOND.</p>
+            </div>
+            
+            <div class="footer-col social-col reveal-up delay-2">
+                <h4>Follow Our Journey</h4>
+                <div class="social-links-wide">
+                    <a href="https://instagram.com/amritam.mun" target="_blank" class="social-btn glass-btn">
+                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
+                        <span>@amritam.mun</span>
+                    </a>
+                    <a href="https://instagram.com/unfilteredparadoxofficial" target="_blank" class="social-btn glass-btn">
+                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
+                        <span>@unfilteredparadoxofficial</span>
+                    </a>
+                    <a href="https://instagram.com/sukoonmusicacademyofficial" target="_blank" class="social-btn glass-btn">
+                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
+                        <span>@sukoonmusicacademyofficial</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom reveal-up delay-3">
+            <div class="gold-divider"></div>
+            <p>&copy; 2026 Amritam MUN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Delegate Passport Modal -->
+    <div id="passport-modal" class="modal-overlay hidden">
+        <div class="passport-book">
+            <button id="close-passport" class="close-btn"><i class='bx bx-x'></i></button>
+            <div class="passport-cover">
+                <i class='bx bx-world gold-primary' style="font-size: 3rem; margin-bottom: 10px;"></i>
+                <h2>Delegate Passport</h2>
+                <p>Amritam MUN</p>
+            </div>
+            <div class="passport-pages">
+                <h3>Your Visa Stamps</h3>
+                <div class="stamps-grid" id="stamps-container">
+                    <!-- Stamps injected via JS -->
+                </div>
+                <div class="passport-reward" style="flex-direction: column; align-items: center; text-align: center;">
+                    <p style="font-size: 0.9rem; font-weight: 600; color: var(--gold-primary); margin-bottom: 10px;">Screenshot this Passport and tag us on Instagram <br><strong>@amritam.mun</strong></p>
+                    <a href="https://api.whatsapp.com/send?text=I%20just%20earned%20my%20Diplomatic%20Passport%20from%20the%20Amritam%20MUN%20Masterclass!%20%F0%9F%8C%8E%E2%9C%A8%20Check%20it%20out%20and%20join%20the%20conference%3A%20[YOUR_WEBSITE_LINK]" target="_blank" class="btn btn-primary btn-small" style="background: #25D366; border-color: #25D366; color: #fff; display: flex; align-items: center; gap: 8px;">
+                        <i class='bx bxl-whatsapp' style="font-size: 1.2rem;"></i> Share on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
