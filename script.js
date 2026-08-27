@@ -342,6 +342,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const myGlobe = Globe()
             .globeImageUrl('https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
             .bumpImageUrl('https://unpkg.com/three-globe/example/img/earth-topology.png')
+            .atmosphereColor('rgba(216, 177, 93, 0.4)')
+            .atmosphereAltitude(0.2)
             .backgroundColor('rgba(0,0,0,0)')
             .labelsData(crisisData)
             .labelLat(d => d.lat)
