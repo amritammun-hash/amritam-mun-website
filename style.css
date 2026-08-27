@@ -367,7 +367,7 @@ ul { list-style: none; }
     .stamps-grid { grid-template-columns: 1fr; justify-items: center; }
     
     /* Globe Mobile */
-    .globe-wrapper { height: 500px; }
+    .globe-wrapper { height: 350px; width: 90%; margin: 30px auto; }
     .crisis-panel { top: auto; bottom: 10px; right: 10px; left: 10px; width: auto; }
 }
 
