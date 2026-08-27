@@ -403,6 +403,7 @@ ul { list-style: none; }
     .nav-list { flex-direction: column; align-items: center; gap: 40px; }
     .nav-link { font-size: 1.5rem; }
     
+    .hud-center-text { top: 43%; }
     .hud-center-text .hero-title { font-size: 4.5rem; letter-spacing: 5px; margin-left: 5px; }
     .hud-center-text .hero-subtitle { font-size: 1.5rem; letter-spacing: 8px; margin-left: 8px; }
     .coming-soon { font-size: 1.5rem; letter-spacing: 3px; margin-bottom: 10px; }
@@ -410,7 +411,9 @@ ul { list-style: none; }
     
     .hud-top-left { display: none; }
     .hud-bottom-right { display: none; }
-    .hud-bottom-left { bottom: 80px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 350px; text-align: center; padding: 20px; }
+    .hud-bottom-left { bottom: 30px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 350px; text-align: center; padding: 20px; }
+    
+    .section-title { font-size: 2.5rem; letter-spacing: 2px; }
     .location-badge { display: flex; justify-content: center; width: 100%; }
     
     .timeline-container::before { left: 30px; }
