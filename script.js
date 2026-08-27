@@ -362,7 +362,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Auto-rotate and fix scroll trap
         myGlobe.controls().autoRotate = true;
         myGlobe.controls().autoRotateSpeed = 1.5;
-        myGlobe.controls().enableZoom = false; // Fixes the scrolling issue on the website
+        myGlobe.controls().enableZoom = false; 
+        
+        // Disable manual rotation on mobile so users don't get trapped while scrolling
+        if (window.innerWidth < 768) {
+            myGlobe.controls().enableRotate = false;
+        }
 
         // Close crisis panel
         document.getElementById('close-crisis').addEventListener('click', () => {
