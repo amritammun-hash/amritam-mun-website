@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MUN Masterclass | Amritam</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="learn-page">
+    
+    <!-- Floating Language Toggle -->
+    <button id="lang-toggle-btn" class="lang-toggle">
+        EN <span style='opacity:0.5; font-size: 0.8em; margin-left: 5px;'>अ</span>
+    </button>
+
+    <!-- Background -->
+    <div class="interactive-bg">
+        <div class="glow-point"></div>
+    </div>
+    <div class="ambient-dust" id="dust-container"></div>
+
+    <!-- Minimal Navbar -->
+    <header class="navbar scrolled" style="height: 75px; position: fixed;">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class='bx bx-left-arrow-alt' style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+                <span class="amritam-text" style="font-size: 1.1rem;" data-translate-key="nav_home">Home</span>
+            </a>
+            <span class="nav-link active" data-translate-key="nav_learn">MUN Masterclass</span>
+        </div>
+    </header>
+
+    <!-- Hero Title -->
+    <div class="learn-hero">
+        <h1 class="hero-title learn-title" data-translate-key="hero_title">The MUN Masterclass</h1>
+        <div class="title-underline center"></div>
+        <p class="hero-subtitle learn-subtitle" data-translate-key="hero_subtitle">Your complete guide to conquering the committee.</p>
+    </div>
+
+    <!-- The Roadmap -->
+    <div class="roadmap-container container">
+        
+        <!-- Phase 1 -->
+        <div class="roadmap-phase">
+            <div class="phase-header">
+                <div class="phase-number">1</div>
+                <div>
+                    <h2 data-translate-key="sec1_title">Phase 1: Pre-Conference</h2>
+                    <p data-translate-key="sec1_desc">Research and preparation are the keys to victory.</p>
+                </div>
+            </div>
+            <div class="cards-grid">
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-search-alt learn-icon'></i>
+                    <h3 data-translate-key="card1_title">Research Your Portfolio</h3>
+                    <p data-translate-key="card1_text">You represent a country, a historical figure, or a minister (like in Lok Sabha). You must understand your portfolio's economy, allies, enemies, and past actions.</p>
+                </div>
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-file-blank learn-icon'></i>
+                    <h3 data-translate-key="card2_title">The Position Paper</h3>
+                    <p data-translate-key="card2_text">A 1-2 page document outlining your stance on the agenda. It includes the background of the issue, past actions, and your proposed solutions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="path-connector"></div>
+
+        <!-- Phase 2 -->
+        <div class="roadmap-phase">
+            <div class="phase-header">
+                <div class="phase-number">2</div>
+                <div>
+                    <h2 data-translate-key="sec2_title">Phase 2: The Flow of Debate</h2>
+                    <p data-translate-key="sec2_desc">Understanding how a committee operates from start to finish.</p>
+                </div>
+            </div>
+            <div class="cards-grid cols-3">
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-list-ul learn-icon'></i>
+                    <h3 data-translate-key="gsl_title">General Speaker's List (GSL)</h3>
+                    <p data-translate-key="gsl_text">The default state of the committee. Delegates give broad speeches (usually 60-90 seconds) outlining their overall policy on the agenda.</p>
+                </div>
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-time learn-icon'></i>
+                    <h3 data-translate-key="mod_title">Moderated Caucus</h3>
+                    <p data-translate-key="mod_text">A structured debate on a highly specific sub-topic. You raise your placard to be called on by the Chair (or Speaker) to speak.</p>
+                </div>
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-conversation learn-icon'></i>
+                    <h3 data-translate-key="unmod_title">Unmoderated Caucus</h3>
+                    <p data-translate-key="unmod_text">Informal lobbying time. You leave your seat, talk directly to other delegates, form alliances (blocs), and write Working Papers together.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="path-connector"></div>
+
+        <!-- Phase 3 -->
+        <div class="roadmap-phase">
+            <div class="phase-header">
+                <div class="phase-number">3</div>
+                <div>
+                    <h2 data-translate-key="sec3_title">Phase 3: Points & Motions</h2>
+                    <p data-translate-key="sec3_desc">The tools you use to interact with the Chair/Speaker and the committee.</p>
+                </div>
+            </div>
+            
+            <div class="motion-demo glass-panel">
+                <h3 data-translate-key="motion_title">Raising a Motion</h3>
+                <div class="speech-bubble">
+                    <p data-translate-key="motion_text">To suggest an action, you raise your placard and say: 'The delegate of [Country] raises a motion for a [Type of Caucus] on the topic [Topic] for [Total Time] and [Speaker Time].'</p>
+                </div>
+            </div>
+
+            <div class="cards-grid cols-2">
+                <div class="learn-card point-card glass-panel">
+                    <div class="card-glow"></div>
+                    <h3 data-translate-key="popp_title">Point of Personal Privilege</h3>
+                    <p data-translate-key="popp_text">Used if you experience physical discomfort. E.g., 'The delegate cannot hear the speaker'. (Can interrupt a speaker).</p>
+                </div>
+                <div class="learn-card point-card glass-panel">
+                    <div class="card-glow"></div>
+                    <h3 data-translate-key="poi_title">Point of Information</h3>
+                    <p data-translate-key="poi_text">A formal question directed at a delegate who has just finished speaking and yielded their time to questions.</p>
+                </div>
+                <div class="learn-card point-card glass-panel">
+                    <div class="card-glow"></div>
+                    <h3 data-translate-key="poo_title">Point of Order</h3>
+                    <p data-translate-key="poo_text">Used to point out a mistake in the rules of procedure made by the Chair/Speaker or another delegate.</p>
+                </div>
+                <div class="learn-card point-card glass-panel">
+                    <div class="card-glow"></div>
+                    <h3 data-translate-key="popi_title">Point of Parliamentary Inquiry</h3>
+                    <p data-translate-key="popi_text">Used to ask the Chair/Speaker a question about the rules. E.g., 'What is the voting majority required?'</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="path-connector"></div>
+
+        <!-- Phase 4 -->
+        <div class="roadmap-phase" style="margin-bottom: 100px;">
+            <div class="phase-header">
+                <div class="phase-number">4</div>
+                <div>
+                    <h2 data-translate-key="sec4_title">Phase 4: Resolutions & Directives</h2>
+                    <p data-translate-key="sec4_desc">Formalizing your solutions.</p>
+                </div>
+            </div>
+            <div class="cards-grid cols-3">
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-book-bookmark learn-icon'></i>
+                    <h3 data-translate-key="dr_title">Draft Resolution / Directive</h3>
+                    <p data-translate-key="dr_text">The final document of solutions. GA committees pass Resolutions, while Crisis/Indian/Fictional committees pass quick action Directives.</p>
+                </div>
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-edit-alt learn-icon'></i>
+                    <h3 data-translate-key="amend_title">Amendments</h3>
+                    <p data-translate-key="amend_text">Changes proposed to a document before it is voted upon. They can add, strike out, or modify clauses.</p>
+                </div>
+                <div class="learn-card glass-panel">
+                    <i class='bx bx-check-shield learn-icon'></i>
+                    <h3 data-translate-key="voting_title">Voting Block</h3>
+                    <p data-translate-key="voting_text">The doors are sealed. Delegates vote 'Yes', 'No', or 'Abstain'. If it passes, the committee succeeds!</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: 40px; border-top: 1px solid rgba(216, 177, 93, 0.2);">
+        <div class="footer-bottom" style="padding-top: 0;">
+            <p>&copy; 2026 Amritam MUN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
