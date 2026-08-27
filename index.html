@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Boxicons for icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css?v=2.5">
+    <link rel="stylesheet" href="style.css?v=2.6">
     <!-- Globe.gl -->
     <script src="https://unpkg.com/globe.gl"></script>
 </head>
@@ -58,9 +58,10 @@
     </header>
 
     <!-- Hero Section (Teaser) -->
-    <section class="hero" id="home">
+    <section class="hero split-hero" id="home">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
+        <div class="hero-split-container">
+            <div class="hero-text-col">
             <div class="teaser-top reveal">
                 <span class="teaser-line"></span>
                 <p class="teaser-text">SOMETHING EXTRAORDINARY IS ON ITS WAY</p>
@@ -88,7 +89,7 @@
                 <i class='bx bxs-quote-alt-right gold-quote'></i>
             </div>
             
-            <div class="hero-actions reveal delay-4" style="margin-bottom: 40px; text-align: center;">
+            <div class="hero-actions reveal delay-4" style="margin-bottom: 40px; text-align: left;">
                 <h2 class="coming-soon" data-text="COMING SOON" style="margin-bottom: 5px; white-space: nowrap;">COMING SOON</h2>
                 <p style="color: var(--gold-primary); letter-spacing: 3px; text-transform: uppercase; font-size: 0.85rem; font-weight: 600;">Prepare to elevate your voice</p>
             </div>
@@ -127,6 +128,18 @@
                 <p>STAY TUNED. STAY INSPIRED.</p>
                 <div class="mouse">
                     <div class="wheel"></div>
+                </div>
+            </div>
+            </div>
+            
+            <div class="hero-globe-col reveal delay-2">
+                <div class="globe-wrapper">
+                    <div id="globeViz"></div>
+                    <div id="crisis-panel" class="crisis-panel glass-panel hidden">
+                        <button id="close-crisis" class="close-btn"><i class='bx bx-x'></i></button>
+                        <h3 id="crisis-title">Committee Name</h3>
+                        <p id="crisis-desc" style="margin-bottom: 0;">Agenda description will appear here.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -271,23 +284,7 @@
         </div>
     </section>
 
-    <!-- Interactive 3D Globe Section -->
-    <section id="world-stage" class="section">
-        <div class="container text-center">
-            <h2 class="section-title">The World Stage</h2>
-            <p class="section-subtitle">Spin the globe and click on the glowing markers to discover interesting MUN facts from around the world.</p>
-        </div>
-        
-        <div class="globe-wrapper">
-            <div id="globeViz"></div>
-            <!-- Crisis Info Panel (Hidden by default, shown by JS) -->
-            <div id="crisis-panel" class="crisis-panel glass-panel hidden">
-                <button id="close-crisis" class="close-btn"><i class='bx bx-x'></i></button>
-                <h3 id="crisis-title">Committee Name</h3>
-                <p id="crisis-desc" style="margin-bottom: 0;">Agenda description will appear here.</p>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Interactive Game Section -->
     <section class="game-section section" id="game">
@@ -358,24 +355,26 @@
 
     <!-- Interactive Q&A Section (FAQ) -->
     <section class="qa-section section" id="qa">
-        <div class="container">
-            <div class="section-header text-center reveal-up">
-                <div class="tagline-wrapper center">
-                    <span class="gold-dot"></span>
-                    <p class="tagline small">FREQUENTLY ASKED</p>
-                    <span class="gold-dot"></span>
+        <div class="container qa-split-layout">
+            <div class="qa-left-col reveal-up">
+                <div class="section-header text-left">
+                    <div class="tagline-wrapper" style="justify-content: flex-start; margin-bottom: 20px;">
+                        <span class="gold-dot" style="margin-left: 0;"></span>
+                        <p class="tagline small">FREQUENTLY ASKED</p>
+                    </div>
+                    <h2 class="section-title">Common <span class="highlight">Queries</span></h2>
+                    <div class="title-underline"></div>
                 </div>
-                <h2 class="section-title">Common <span class="highlight">Queries</span></h2>
-                <div class="title-underline center"></div>
-            </div>
-            
-            <!-- Tabs for First-Timers vs Experienced -->
-            <div class="qa-tabs reveal-up delay-1">
-                <button class="qa-tab active" data-target="qa-beginner">First-Timers</button>
-                <button class="qa-tab" data-target="qa-experienced">Experienced</button>
+                
+                <!-- Tabs for First-Timers vs Experienced -->
+                <div class="qa-tabs">
+                    <button class="qa-tab active" data-target="qa-beginner">First-Timers</button>
+                    <button class="qa-tab" data-target="qa-experienced">Experienced</button>
+                </div>
             </div>
 
-            <div class="qa-container reveal-up delay-2">
+            <div class="qa-right-col reveal-up delay-1">
+                <div class="qa-container">
                 <!-- Beginner Qs -->
                 <div class="qa-group active" id="qa-beginner">
                     <div class="qa-item">
