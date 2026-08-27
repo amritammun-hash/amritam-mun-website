@@ -366,6 +366,12 @@ document.addEventListener('DOMContentLoaded', () => {
         myGlobe.controls().autoRotateSpeed = 1.5;
         myGlobe.controls().enableZoom = false; 
         
+        // Disable moving globe by hand on phone
+        if (window.innerWidth <= 768) {
+            myGlobe.controls().enableRotate = false;
+            myGlobe.controls().enablePan = false;
+        }
+        
         // Handle window resize for full-screen globe
         window.addEventListener('resize', () => {
             myGlobe.width(window.innerWidth);
