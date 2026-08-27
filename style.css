@@ -140,11 +140,11 @@ ul { list-style: none; }
     animation: fillText 3s cubic-bezier(0.77, 0, 0.175, 1) forwards 1.5s;
 }
 @keyframes fillText { 0% { background-position: 100% 0; } 100% { background-position: 0 0; } }
-.location-badge { display: inline-flex; align-items: center; padding: 12px 25px; border: 1px solid rgba(216, 177, 93, 0.2); border-radius: 40px; background: rgba(16, 54, 66, 0.4); margin-bottom: 0; transition: all 0.3s ease; }
-.location-badge:hover { background: rgba(16, 54, 66, 0.7); border-color: var(--gold-primary); transform: translateY(-3px); }
-.location-icon-wrapper { width: 25px; height: 25px; border-radius: 50%; background: var(--gradient-gold); display: flex; align-items: center; justify-content: center; margin-right: 10px; }
-.location-icon-wrapper i { color: var(--bg-deep); font-size: 1rem; }
-.location-badge span { font-family: var(--font-sans); font-size: 0.85rem; letter-spacing: 3px; color: var(--gold-light); font-weight: 500; }
+.location-badge { display: inline-flex; align-items: center; padding: 12px 25px; border: 1px solid rgba(216, 177, 93, 0.5); border-radius: 40px; background: rgba(16, 54, 66, 0.6); margin-bottom: 0; transition: all 0.3s ease; box-shadow: 0 0 20px rgba(216, 177, 93, 0.2); }
+.location-badge:hover { background: rgba(16, 54, 66, 0.9); border-color: var(--gold-primary); transform: translateY(-3px); box-shadow: 0 0 30px rgba(216, 177, 93, 0.4); }
+.location-icon-wrapper { background: rgba(216, 177, 93, 0.2); width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 15px; }
+.location-icon-wrapper i { font-size: 1.2rem; color: var(--gold-primary); }
+.location-badge span { font-family: var(--font-sans); font-size: 0.9rem; letter-spacing: 3px; color: var(--gold-primary); font-weight: 700; text-shadow: 0 0 10px rgba(216, 177, 93, 0.5); }
 
 .pillars-container-vertical { display: flex; flex-direction: column; gap: 15px; }
 .pillar-mini { display: flex; align-items: center; gap: 15px; background: rgba(1, 4, 8, 0.4); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); padding: 12px 25px; border-radius: 30px; border: 1px solid rgba(216, 177, 93, 0.1); transition: all 0.3s ease; cursor: default; }
@@ -405,7 +405,7 @@ ul { list-style: none; }
     
     .hud-center-text .hero-title { font-size: 4.5rem; letter-spacing: 5px; margin-left: 5px; }
     .hud-center-text .hero-subtitle { font-size: 1.5rem; letter-spacing: 8px; margin-left: 8px; }
-    .coming-soon { font-size: 2rem; letter-spacing: 5px; margin-bottom: 10px; }
+    .coming-soon { font-size: 1.5rem; letter-spacing: 3px; margin-bottom: 10px; }
     .tagline { font-size: 0.8rem; letter-spacing: 4px; text-align: center; }
     
     .hud-top-left { display: none; }
