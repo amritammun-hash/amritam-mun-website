@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritam MUN | Registrations</title>
+    <meta name="description" content="Apply for Organizing Committee, Campus Ambassador, Executive Board, or as a Delegate.">
+    <!-- Google Fonts: Cinzel for the logo match, Montserrat for clean sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css?v=3.3">
+    <!-- Globe.gl -->
+    <script src="https://unpkg.com/globe.gl"></script>
+    <style>
+        .registration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        .reg-card {
+            background: rgba(10, 15, 25, 0.7);
+            border: 1px solid rgba(216, 177, 93, 0.2);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .reg-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--gold-gradient);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+            transform-origin: left;
+        }
+        .reg-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(216, 177, 93, 0.5);
+            background: rgba(20, 25, 35, 0.8);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(216, 177, 93, 0.1);
+        }
+        .reg-card:hover::before {
+            transform: scaleX(1);
+        }
+        .reg-icon {
+            font-size: 3rem;
+            color: var(--gold-light);
+            margin-bottom: 20px;
+        }
+        .reg-title {
+            font-family: var(--font-serif);
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+            letter-spacing: 2px;
+        }
+        .reg-desc {
+            font-family: var(--font-sans);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .reg-status {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .status-open { color: #4ade80; }
+        .status-soon { color: var(--gold-primary); }
+    </style>
+</head>
+<body>
+    <!-- Cinematic Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="aurora-container">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Interactive Background Elements -->
+    <div class="interactive-bg">
+        <div class="glow-point"></div>
+    </div>
+    <div class="ambient-dust" id="dust-container"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container reveal-top">
+            <a href="index.html" class="logo">
+                <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span class="amritam-text">AMRITAM</span>
+                    <span class="mun-text">MUN</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#partners" class="nav-link">Partners</a></li>
+                    <li><a href="procedure.html" class="nav-link">Procedure</a></li>
+                    <li><a href="index.html#game" class="nav-link">Play & Learn</a></li>
+                    <li><a href="learn.html" class="nav-link">Masterclass ✨</a></li>
+                    <li><a href="register.html" class="nav-link" style="color: var(--gold-light);"><i class='bx bx-id-card'></i> Register</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="section" style="padding-top: 150px; min-height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="tagline-wrapper center">
+                    <span class="gold-dot"></span>
+                    <p class="tagline small">JOIN THE REVOLUTION</p>
+                    <span class="gold-dot"></span>
+                </div>
+                <h2 class="section-title">REGISTRATIONS</h2>
+                <div class="title-underline center"></div>
+                <p style="font-family: var(--font-sans); color: var(--text-secondary); max-width: 600px; margin: 20px auto 0; font-size: 1rem; line-height: 1.6;">
+                    Applications are officially open. Choose your role below and be a part of the Global Virtual Convention.
+                </p>
+            </div>
+            
+            <div class="registration-grid reveal-up delay-2">
+                <!-- Organizing Committee -->
+                <div class="reg-card">
+                    <div>
+                        <i class='bx bx-sitemap reg-icon'></i>
+                        <h3 class="reg-title">ORGANIZING COMMITTEE</h3>
+                        <p class="reg-desc">Be the backbone of Amritam MUN. Help manage operations, logistics, marketing, and the flawless execution of the Global Virtual Convention.</p>
+                    </div>
+                    <div>
+                        <div class="reg-status status-open"><i class='bx bx-check-circle'></i> APPLICATIONS OPEN</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScACZHW04aXWrvcGX_hX5kKOeCLXqlO59vT_yE8F6OdI8P8Mg/viewform?usp=header" target="_blank" class="btn btn-primary" style="width: 100%;">APPLY NOW <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <!-- Campus Ambassador -->
+                <div class="reg-card">
+                    <div>
+                        <i class='bx bx-group reg-icon'></i>
+                        <h3 class="reg-title">CAMPUS AMBASSADOR</h3>
+                        <p class="reg-desc">Lead at your campus, spread a global cause, build your network, and gain exclusive opportunities. Be a bridge to a bigger tomorrow.</p>
+                    </div>
+                    <div>
+                        <div class="reg-status status-open"><i class='bx bx-check-circle'></i> APPLICATIONS OPEN</div>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfIxIf6IJMTPDf8qP4TDJHjf6iSS25hzE267WUVAPvdn1DX2g/viewform?usp=dialog" target="_blank" class="btn btn-primary" style="width: 100%;">APPLY NOW <i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+                
+                <!-- Executive Board -->
+                <div class="reg-card">
+                    <div>
+                        <i class='bx bx-briefcase reg-icon'></i>
+                        <h3 class="reg-title">EXECUTIVE BOARD</h3>
+                        <p class="reg-desc">Take on the mantle of leadership. Adjudicate debate, uphold diplomatic decorum, and shape the narrative of the committees.</p>
+                    </div>
+                    <div>
+                        <div class="reg-status status-soon"><i class='bx bx-time-five'></i> OPENING SOON</div>
+                        <button class="btn btn-outline" style="width: 100%; opacity: 0.6; cursor: not-allowed;" disabled>COMING SOON</button>
+                    </div>
+                </div>
+                
+                <!-- Delegate -->
+                <div class="reg-card">
+                    <div>
+                        <i class='bx bx-globe reg-icon'></i>
+                        <h3 class="reg-title">DELEGATE REGISTRATION</h3>
+                        <p class="reg-desc">Represent nations, engage in rigorous diplomatic dialogue, and draft resolutions to solve pressing global issues.</p>
+                    </div>
+                    <div>
+                        <div class="reg-status status-soon"><i class='bx bx-time-five'></i> OPENING SOON</div>
+                        <button class="btn btn-outline" style="width: 100%; opacity: 0.6; cursor: not-allowed;" disabled>COMING SOON</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="footer-logo">
+            <h3 class="footer-title">AMRITAM MUN</h3>
+            <p class="footer-tagline">Ideas that live beyond.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" class="social-icon"><i class='bx bx-envelope'></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Amritam MUN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
