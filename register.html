@@ -84,6 +84,51 @@
         }
         .status-open { color: #4ade80; }
         .status-soon { color: var(--gold-primary); }
+
+        .reg-card.featured {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 40px;
+            padding: 50px;
+            background: linear-gradient(135deg, rgba(216, 177, 93, 0.15), rgba(10, 15, 25, 0.9));
+            border-color: var(--gold-primary);
+        }
+        .reg-card.featured .reg-icon {
+            font-size: 5rem;
+            margin-bottom: 0;
+            text-shadow: 0 0 20px rgba(216, 177, 93, 0.5);
+        }
+        .reg-card.featured .featured-content {
+            flex: 1;
+            text-align: left;
+        }
+        .reg-card.featured .featured-content .reg-status {
+            text-align: left;
+        }
+        .reg-card.featured .featured-actions {
+            width: 300px;
+        }
+        @media (max-width: 768px) {
+            .reg-card.featured {
+                flex-direction: column;
+                text-align: center;
+                padding: 30px;
+            }
+            .reg-card.featured .featured-content {
+                text-align: center;
+            }
+            .reg-card.featured .featured-content .reg-status {
+                text-align: center;
+            }
+            .reg-card.featured .featured-actions {
+                width: 100%;
+            }
+            .reg-card.featured .reg-icon {
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -146,6 +191,19 @@
             </div>
             
             <div class="registration-grid reveal-up delay-2">
+                <!-- Delegate (Featured) -->
+                <div class="reg-card featured">
+                    <i class='bx bx-globe reg-icon'></i>
+                    <div class="featured-content">
+                        <div class="reg-status status-soon"><i class='bx bx-time-five'></i> OPENING SOON</div>
+                        <h3 class="reg-title" style="font-size: 2rem;">DELEGATE REGISTRATION</h3>
+                        <p class="reg-desc" style="font-size: 1rem; margin-bottom: 0;">Represent nations, engage in rigorous diplomatic dialogue, and draft resolutions to solve pressing global issues at the Global Virtual Convention.</p>
+                    </div>
+                    <div class="featured-actions">
+                        <button class="btn btn-outline" style="width: 100%; padding: 15px; opacity: 0.6; cursor: not-allowed;" disabled>COMING SOON</button>
+                    </div>
+                </div>
+
                 <!-- Organizing Committee -->
                 <div class="reg-card">
                     <div>
@@ -178,19 +236,6 @@
                         <i class='bx bx-briefcase reg-icon'></i>
                         <h3 class="reg-title">EXECUTIVE BOARD</h3>
                         <p class="reg-desc">Take on the mantle of leadership. Adjudicate debate, uphold diplomatic decorum, and shape the narrative of the committees.</p>
-                    </div>
-                    <div>
-                        <div class="reg-status status-soon"><i class='bx bx-time-five'></i> OPENING SOON</div>
-                        <button class="btn btn-outline" style="width: 100%; opacity: 0.6; cursor: not-allowed;" disabled>COMING SOON</button>
-                    </div>
-                </div>
-                
-                <!-- Delegate -->
-                <div class="reg-card">
-                    <div>
-                        <i class='bx bx-globe reg-icon'></i>
-                        <h3 class="reg-title">DELEGATE REGISTRATION</h3>
-                        <p class="reg-desc">Represent nations, engage in rigorous diplomatic dialogue, and draft resolutions to solve pressing global issues.</p>
                     </div>
                     <div>
                         <div class="reg-status status-soon"><i class='bx bx-time-five'></i> OPENING SOON</div>
