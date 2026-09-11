@@ -414,6 +414,8 @@ ul { list-style: none; }
     .hud-bottom-left { bottom: 30px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 350px; text-align: center; padding: 20px; }
     
     .section-title { font-size: 2.5rem; letter-spacing: 2px; }
+    .convention-title { font-size: 1.5rem !important; }
+    .ambassador-title { font-size: 2.5rem !important; }
     .location-badge { display: flex; justify-content: center; width: 100%; }
     
     .timeline-container::before { left: 30px; }
