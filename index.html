@@ -47,7 +47,7 @@
                     <li><a href="procedure.html" class="nav-link">Procedure</a></li>
                     <li><a href="#game" class="nav-link">Play & Learn</a></li>
                     <li><a href="learn.html" class="nav-link highlight-link">Masterclass <i class='bx bx-star'></i></a></li>
-                    <li><a href="register.html" class="nav-link highlight-link"><i class='bx bx-id-card'></i> Register</a></li>
+                    <li><a href="register.html" class="nav-link register-btn"><i class='bx bx-id-card'></i> Register</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
@@ -479,44 +479,50 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="footer-glow"></div>
-        <div class="footer-container container">
+    <footer class="footer" id="contact" style="background: var(--bg-color); padding: 80px 0 30px; border-top: 1px solid rgba(216, 177, 93, 0.2);">
+        <div class="footer-container container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: left;">
             <div class="footer-col brand-col reveal-up">
-                <a href="#" class="logo footer-logo">
-                    <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="footer-logo-img">
+                <a href="#" class="logo footer-logo" style="display: inline-flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="footer-logo-img" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid var(--gold-dark);">
                     <div class="footer-brand-text">
-                        <span class="amritam-text">AMRITAM</span>
-                        <span class="mun-text">MUN</span>
+                        <span class="amritam-text" style="font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 2px;">AMRITAM</span>
+                        <span class="mun-text" style="color: var(--gold-primary);">MUN</span>
                     </div>
                 </a>
-                <p class="footer-tagline">IDEAS THAT LIVE BEYOND.</p>
-                            </div>
-                        </div>
+                <p class="footer-tagline" style="font-family: var(--font-sans); color: var(--text-secondary); letter-spacing: 2px; font-size: 0.9rem;">IDEAS THAT LIVE BEYOND.</p>
+            </div>
             
+            <div class="footer-col links-col reveal-up delay-1">
+                <h4 style="font-family: var(--font-serif); color: var(--gold-light); letter-spacing: 2px; margin-bottom: 20px;">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="register.html">Registrations</a></li>
+                    <li><a href="procedure.html">Procedure</a></li>
+                    <li><a href="learn.html">Masterclass</a></li>
+                </ul>
+            </div>
+
             <div class="footer-col social-col reveal-up delay-2">
-                <h4>Follow Our Journey</h4>
-                <div class="social-links-wide">
-                    <a href="https://instagram.com/amritam.mun" target="_blank" class="social-btn glass-btn">
-                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
-                        <span>@amritam.mun</span>
+                <h4 style="font-family: var(--font-serif); color: var(--gold-light); letter-spacing: 2px; margin-bottom: 20px;">Follow Our Journey</h4>
+                <div class="social-links-wide" style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="https://instagram.com/amritam.mun" target="_blank" class="social-btn glass-btn" style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; color: #fff;">
+                        <i class='bx bxl-instagram' style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+                        <span style="font-family: var(--font-sans); letter-spacing: 1px;">@amritam.mun</span>
                     </a>
-                    <a href="https://instagram.com/unfilteredparadoxofficial" target="_blank" class="social-btn glass-btn">
-                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
-                        <span>@unfilteredparadoxofficial</span>
+                    <a href="https://instagram.com/unfilteredparadoxofficial" target="_blank" class="social-btn glass-btn" style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; color: #fff;">
+                        <i class='bx bxl-instagram' style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+                        <span style="font-family: var(--font-sans); letter-spacing: 1px;">@unfilteredparadoxofficial</span>
                     </a>
-                    <a href="https://instagram.com/sukoonmusicacademyofficial" target="_blank" class="social-btn glass-btn">
-                        <div class="social-icon-wrapper"><i class='bx bxl-instagram'></i></div>
-                        <span>@sukoonmusicacademyofficial</span>
+                    <a href="https://instagram.com/sukoonmusicacademyofficial" target="_blank" class="social-btn glass-btn" style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; color: #fff;">
+                        <i class='bx bxl-instagram' style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+                        <span style="font-family: var(--font-sans); letter-spacing: 1px;">@sukoonmusicacademy</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom reveal-up delay-3">
-            <div class="gold-divider"></div>
-            <p>&copy; 2026 Amritam MUN. All rights reserved.</p>
-                            </div>
-                        </div>
+        <div class="footer-bottom reveal-up delay-3" style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(216, 177, 93, 0.2);">
+            <p style="font-family: var(--font-sans); color: var(--text-secondary); font-size: 0.8rem; letter-spacing: 1px;">&copy; 2026 Amritam MUN. All rights reserved.</p>
+        </div>
     </footer>
 
     <!-- Delegate Passport Modal -->
