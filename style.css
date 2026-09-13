@@ -397,8 +397,8 @@ ul { list-style: none; }
 }
 
 @media (max-width: 768px) {
-    .hamburger { display: block; }
-    .nav-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; background: rgba(1, 4, 8, 0.98); flex-direction: column; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s ease; }
+    .hamburger { display: block; position: relative; z-index: 2000; }
+    .nav-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: 1500; background: rgba(1, 4, 8, 0.98); flex-direction: column; justify-content: center; opacity: 0; visibility: hidden; transition: all 0.4s ease; }
     .nav-menu.active { opacity: 1; visibility: visible; }
     .nav-list { flex-direction: column; align-items: center; gap: 40px; }
     .nav-link { font-size: 1.5rem; }
