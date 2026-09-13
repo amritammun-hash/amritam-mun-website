@@ -403,7 +403,7 @@ ul { list-style: none; }
     .nav-list { flex-direction: column; align-items: center; gap: 40px; }
     .nav-link { font-size: 1.5rem; }
     
-    .hero-section { height: auto; min-height: 100vh; padding-top: 150px; padding-bottom: 50px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; }
+    .hud-hero { height: auto; min-height: 100vh; padding-top: 130px; padding-bottom: 50px; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; overflow-x: hidden; }
     .hud-container { position: relative; width: 100%; display: flex; flex-direction: column; gap: 30px; align-items: center; }
     .hud-center-text { position: relative; top: auto; left: auto; transform: none; width: 100%; margin-bottom: 40px; }
     .hud-center-text .hero-title { font-size: 3.8rem; letter-spacing: 5px; margin-left: 5px; }
