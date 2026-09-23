@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amritam MUN | Agendas & Committees</title>
+    <meta name="description" content="Explore the committees and agendas for Amritam MUN Global Virtual Convention.">
+    <!-- Google Fonts: Cinzel for the logo match, Montserrat for clean sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Boxicons for icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css?v=3.8">
+    <style>
+        .agendas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+            padding-bottom: 60px;
+        }
+        .agenda-card {
+            background: rgba(1, 4, 8, 0.6);
+            border: 1px solid rgba(216, 177, 93, 0.2);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            position: relative;
+        }
+        .agenda-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(216, 177, 93, 0.6);
+            box-shadow: 0 15px 40px rgba(216, 177, 93, 0.15);
+        }
+        .agenda-image-wrapper {
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* 1:1 Aspect Ratio */
+            overflow: hidden;
+        }
+        .agenda-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .agenda-card:hover .agenda-img {
+            transform: scale(1.05);
+        }
+        .agenda-content {
+            padding: 25px;
+            text-align: center;
+        }
+        .agenda-committee {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            color: var(--gold-primary);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+        .agenda-title {
+            font-family: var(--font-serif);
+            font-size: 1.4rem;
+            color: #fff;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cinematic Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="aurora-container">
+        <div class="aurora-orb orb-1"></div>
+        <div class="aurora-orb orb-2"></div>
+        <div class="aurora-orb orb-3"></div>
+    </div>
+
+    <!-- Interactive Background Elements -->
+    <div class="interactive-bg">
+        <div class="glow-point"></div>
+    </div>
+    <div class="ambient-dust" id="dust-container"></div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container reveal-top">
+            <a href="index.html" class="logo">
+                <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="nav-logo-img">
+                <div class="nav-logo-text">
+                    <span class="amritam-text">AMRITAM</span>
+                    <span class="mun-text">MUN</span>
+                </div>
+            </a>
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="agendas.html" class="nav-link">Agendas</a></li>
+                    <li><a href="procedure.html" class="nav-link">Procedure</a></li>
+                    <li><a href="index.html#game" class="nav-link">Play & Learn</a></li>
+                    <li><a href="learn.html" class="nav-link">Masterclass ✨</a></li>
+                    <li><a href="register.html" class="nav-link nav-register-premium"><i class='bx bx-id-card'></i> REGISTER <span class="premium-badge">EARLY BIRD</span></a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="section" style="padding-top: 150px; min-height: 100vh;">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <div class="tagline-wrapper center">
+                    <span class="gold-dot"></span>
+                    <p class="tagline small">THE BATTLEGROUNDS OF DIPLOMACY</p>
+                    <span class="gold-dot"></span>
+                </div>
+                <h2 class="section-title">Committees & <span class="highlight">Agendas</span></h2>
+                <div class="title-underline center"></div>
+                <p class="section-description">Phase I: Global Virtual Convention features 6 distinct committees tackling the most pressing issues of our time. Here are our revealed agendas.</p>
+            </div>
+            
+            <div class="agendas-grid">
+                
+                <!-- UNGA -->
+                <div class="agenda-card reveal-up delay-1">
+                    <div class="agenda-image-wrapper">
+                        <img src="assets/agendas/unga.jpg" alt="UNGA Agenda" class="agenda-img">
+                    </div>
+                    <div class="agenda-content">
+                        <p class="agenda-committee">UNITED NATIONS GENERAL ASSEMBLY</p>
+                        <h3 class="agenda-title">The AI Arms Race: Establishing International Norms for AI-Enabled Warfare, Deepfakes and Emerging Artificial General Intelligence</h3>
+                    </div>
+                </div>
+
+                <!-- Lok Sabha -->
+                <div class="agenda-card reveal-up delay-2">
+                    <div class="agenda-image-wrapper">
+                        <img src="assets/agendas/lok-sabha.jpg" alt="Lok Sabha Agenda" class="agenda-img">
+                    </div>
+                    <div class="agenda-content">
+                        <p class="agenda-committee">LOK SABHA</p>
+                        <h3 class="agenda-title">Delimitation 2026: Redrawing Representation or Redefining India's Federal Balance?</h3>
+                    </div>
+                </div>
+
+                <!-- AIPPM -->
+                <div class="agenda-card reveal-up delay-3">
+                    <div class="agenda-image-wrapper">
+                        <img src="assets/agendas/aippm.jpg" alt="AIPPM Agenda" class="agenda-img">
+                    </div>
+                    <div class="agenda-content">
+                        <p class="agenda-committee">AIPPM</p>
+                        <h3 class="agenda-title">Freebies and Welfare in Indian Elections: Balancing Social Welfare, Fiscal Responsibility and Electoral Fairness</h3>
+                    </div>
+                </div>
+
+                <!-- Mahabharata -->
+                <div class="agenda-card reveal-up delay-1">
+                    <div class="agenda-image-wrapper">
+                        <img src="assets/agendas/mahabharata.jpg" alt="Mahabharata Agenda" class="agenda-img">
+                    </div>
+                    <div class="agenda-content">
+                        <p class="agenda-committee">MAHABHARATA (CRISIS)</p>
+                        <h3 class="agenda-title">The Kuru Succession Crisis: Resolving the Question of Legitimacy and Preventing Civil War</h3>
+                    </div>
+                </div>
+
+                <!-- Avengers -->
+                <div class="agenda-card reveal-up delay-2">
+                    <div class="agenda-image-wrapper">
+                        <img src="assets/agendas/avengers.jpg" alt="Avengers Agenda" class="agenda-img">
+                    </div>
+                    <div class="agenda-content">
+                        <p class="agenda-committee">AVENGERS (CRISIS)</p>
+                        <h3 class="agenda-title">The Endgame Protocol: Addressing Galactic Resource Depletion, Cosmic Security, and the Fate of Earth</h3>
+                    </div>
+                </div>
+
+                <!-- 6th Committee placeholder -->
+                <div class="agenda-card reveal-up delay-3" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(216,177,93,0.05); border: 1px dashed var(--gold-dark); text-align: center; padding: 40px;">
+                    <i class='bx bx-lock-alt' style="font-size: 4rem; color: var(--gold-primary); margin-bottom: 20px;"></i>
+                    <h3 class="agenda-title" style="color: var(--text-secondary);">6th Committee<br>Revealing Soon</h3>
+                    <p style="font-family: var(--font-sans); color: var(--gold-primary); font-size: 0.8rem; letter-spacing: 2px; margin-top: 15px; text-transform: uppercase;">Stay Tuned</p>
+                </div>
+
+            </div>
+            
+            <div class="text-center reveal-up" style="margin-top: 20px; margin-bottom: 80px;">
+                <a href="register.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 1.2rem;">Apply For Your Committee <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact" style="background: var(--bg-color); padding: 80px 0 30px; border-top: 1px solid rgba(216, 177, 93, 0.2);">
+        <div class="footer-container container" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; text-align: left;">
+            <div class="footer-col brand-col reveal-up">
+                <a href="#" class="logo footer-logo" style="display: inline-flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <img src="assets/amritam-logo.jpg" alt="Amritam MUN" class="footer-logo-img" style="width: 60px; height: 60px; border-radius: 50%; border: 1px solid var(--gold-dark);">
+                    <div class="footer-brand-text">
+                        <span class="amritam-text" style="font-family: var(--font-serif); font-size: 1.5rem; letter-spacing: 2px;">AMRITAM</span>
+                        <span class="mun-text" style="color: var(--gold-primary);">MUN</span>
+                    </div>
+                </a>
+                <p class="footer-tagline" style="font-family: var(--font-sans); color: var(--text-secondary); letter-spacing: 2px; font-size: 0.9rem;">IDEAS THAT LIVE BEYOND.</p>
+            </div>
+            
+            <div class="footer-col links-col reveal-up delay-1">
+                <h4 style="font-family: var(--font-serif); color: var(--gold-light); letter-spacing: 2px; margin-bottom: 20px;">Quick Links</h4>
+                <ul class="footer-links" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 10px;">
+                    <li><a href="index.html" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">Home</a></li>
+                    <li><a href="register.html" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">Registrations</a></li>
+                    <li><a href="agendas.html" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">Agendas</a></li>
+                    <li><a href="procedure.html" style="color: var(--text-secondary); text-decoration: none; transition: color 0.3s;">Procedure</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col social-col reveal-up delay-2">
+                <h4 style="font-family: var(--font-serif); color: var(--gold-light); letter-spacing: 2px; margin-bottom: 20px;">Follow Our Journey</h4>
+                <div class="social-links-wide" style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="https://instagram.com/amritam.mun" target="_blank" class="social-btn glass-btn" style="display: inline-flex; align-items: center; gap: 15px; text-decoration: none; color: #fff;">
+                        <i class='bx bxl-instagram' style="font-size: 1.5rem; color: var(--gold-primary);"></i>
+                        <span style="font-family: var(--font-sans); letter-spacing: 1px;">@amritam.mun</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom reveal-up delay-3" style="text-align: center; margin-top: 50px; padding-top: 20px; border-top: 1px solid rgba(216, 177, 93, 0.2);">
+            <p style="font-family: var(--font-sans); color: var(--text-secondary); font-size: 0.8rem; letter-spacing: 1px;">&copy; 2026 Amritam MUN. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Core Scripts -->
+    <script src="script.js" defer></script>
+</body>
+</html>
